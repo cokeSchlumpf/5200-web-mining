@@ -1,21 +1,21 @@
 import os
 
-print("Pearson Coefficient")
-print("-------------------")
+os.system('echo Pearson Coefficient')
+os.system('echo -------------------')
 os.system('dvc metrics show -a -T --type json --xpath validation.PearsonCorrelation')
-print()
+os.system('echo')
 
-print("Mean Absolute Error")
-print("-------------------")
+os.system('echo Mean Absolute Error')
+os.system('echo -------------------')
 os.system('dvc metrics show -a -T --type json --xpath validation.MeanAbsoluteError')
-print()
+os.system('echo')
 
-print("Mean Squared Error")
-print("-------------------")
+os.system('echo Mean Squared Error')
+os.system('echo -------------------')
 os.system('dvc metrics show -a -T --type json --xpath validation.MeanSquaredError')
-print()
+os.system('echo')
 
-print("Accuracy, Recall, F1 Score")
-print("--------------------------")
+os.system('echo Accuracy, Recall, F1 Score')
+os.system('echo --------------------------')
 os.system('dvc metrics show -a -T --type json --xpath validation.Accuracy')
-print()
+os.system('echo')
