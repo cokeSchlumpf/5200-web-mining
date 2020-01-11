@@ -1,5 +1,6 @@
-md5: c4db16fb4e48290070ed4e4fe874bd79
+md5: ab37e17e66960ef5f86ba13a3510a680
 cmd: python metrics.py
+always_changed: true
 deps:
 - md5: 01d6a2e121b877115418e3a740bd7409
   path: model/offensive.meta.json
