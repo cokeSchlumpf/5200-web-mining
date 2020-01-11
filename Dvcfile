@@ -1,8 +1,8 @@
-md5: 2937f3c54d94c5142f7a5cc192a3d5b8
+md5: 2b3af062977548f4a88e1a98fe095db0
 cmd: python metrics.py
 always_changed: true
 deps:
-- md5: 560c18d9baab6ce9a090729521bbb8db
+- md5: 6855ec7446c849b117aeaf3114129e2c
   path: metrics/offensive.meta.json
-- md5: 89dd10e9b5ead64ed032dcd96eaa622c
+- md5: 62ed02a62ee9df8d8faa9a3958bcdad6
   path: metrics/hate.meta.json

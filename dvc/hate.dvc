@@ -1,4 +1,4 @@
-md5: 4e3d0b01ce29d974c590a3fbe70206d6
+md5: 076733b0ea7fc9a4b9fbde94861ea6e5
 cmd: python train.py hate
 wdir: ..
 deps:
@@ -6,17 +6,17 @@ deps:
   path: data/test.tsv
 - md5: 3a350d9e2e01bb53241e89f73a9b549b
   path: data/train.tsv
-- md5: 8db9250bc47015c18b9a4056f741ae02
+- md5: dcf40d974ab617d85d3a2d68b5a71dca
   path: train.py
 - md5: 8f09f8c17b136085bada85f76ef0b4f5
   path: tokenizers.py
 outs:
-- md5: 0324c10339f95c980d167b04036b58d9
+- md5: 2f5a4bcf3760bb37a662e8934110263e
   path: model/hate.pkl
   cache: true
   metric: false
   persist: false
-- md5: 89dd10e9b5ead64ed032dcd96eaa622c
+- md5: 62ed02a62ee9df8d8faa9a3958bcdad6
   path: metrics/hate.meta.json
   cache: false
   metric: true

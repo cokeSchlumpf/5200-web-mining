@@ -15,23 +15,25 @@
     },
     {
       "name": "<class 'sklearn.svm._classes.LinearSVC'>",
-      "params": {}
+      "params": {
+        "max_iter": 2048
+      }
     }
   ],
   "training": {
-    "Accuracy": 0.773537323470074,
-    "Precession": 0.773537323470074,
-    "Recall": 0.773537323470074,
-    "MeanAbsoluteError": 0.28698722259583054,
-    "MeanSquaredError": 0.4389710827168796,
-    "PearsonCorrelation": 0.37554928850604213
+    "Accuracy": 0.7742098184263618,
+    "Precession": 0.7742098184263618,
+    "Recall": 0.7742098184263618,
+    "MeanAbsoluteError": 0.2800941492938803,
+    "MeanSquaredError": 0.4014794889038332,
+    "PearsonCorrelation": 0.39334927282107396
   },
   "validation": {
-    "Accuracy": 0.7799072019366552,
-    "Precession": 0.7799072019366552,
-    "Recall": 0.7799072019366552,
-    "MeanAbsoluteError": 0.27899939479523905,
-    "MeanSquaredError": 0.41900342949364533,
-    "PearsonCorrelation": 0.35281983688283536
+    "Accuracy": 0.7813193463788581,
+    "Precession": 0.7813193463788581,
+    "Recall": 0.7813193463788581,
+    "MeanAbsoluteError": 0.2751664313092596,
+    "MeanSquaredError": 0.40952188823885416,
+    "PearsonCorrelation": 0.36472055446655965
   }
 }
