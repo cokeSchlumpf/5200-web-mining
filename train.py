@@ -168,4 +168,13 @@ def train_and_validate(field='hate'):
 
 
 if __name__ == '__main__':
-    train_and_validate()
+    import sys
+
+    if len(sys.argv) > 1:
+        field = sys.argv[1]
+    else:
+        field = 'hate'
+
+    print(f"Running training and validation for {field}")
+
+    train_and_validate(field)
