@@ -24,7 +24,7 @@ def create_classifier():
     from sklearn.svm import LinearSVC
 
     params = {
-        "max_iter": 2048
+        # "max_iter": 2048
     }
 
     classifier = LinearSVC(**params)
