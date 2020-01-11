@@ -5,7 +5,6 @@ To reproduce training run and show current and historic KPIs:
 ```bash
 $ dvc repro
 
-
 # or w/o local training of current branch
 $ python metrics.py
 ```
