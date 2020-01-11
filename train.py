@@ -114,6 +114,7 @@ def train(field='hate'):
 
     metrics = calculate_metrics(pipe, X_test, y_test)
     meta = {
+        "field": field,
         "pipeline": [tokenizer.meta, vectorizer.meta, classifier.meta],
         "training": metrics
     }
@@ -126,7 +127,7 @@ def train(field='hate'):
     save_to = os.path.join(MODEL_PATH, f"{field}.pkl")
     dump(pipe, save_to)
 
-    save_to = os.path.join(MODEL_PATH, f"{field}.meta.pkl")
+    save_to = os.path.join(MODEL_PATH, f"{field}.meta.json")
     with open(save_to, 'w') as fp:
         json.dump(meta, fp, indent=2)
     print("... done")
@@ -149,7 +150,7 @@ def validate(model, field='hate', meta=None):
     metrics = calculate_metrics(model, X, y)
     meta['validation'] = metrics
 
-    save_to = os.path.join(MODEL_PATH, f"{field}.meta.pkl")
+    save_to = os.path.join(MODEL_PATH, f"{field}.meta.json")
     with open(save_to, 'w') as fp:
         json.dump(meta, fp, indent=2)
     print("... done")
