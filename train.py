@@ -27,7 +27,7 @@ def create_classifier():
     classifier = LinearSVC()
 
     meta = {
-        "name": type(classifier),
+        "name": str(type(classifier)),
         "params": params
     }
 
@@ -48,7 +48,7 @@ def create_vectorizer(tokenizer):
     vectorizer = CountVectorizer(tokenizer=tokenizer, **params)
 
     meta = {
-        "name": type(vectorizer),
+        "name": str(type(vectorizer)),
         "params": params
     }
 
@@ -114,11 +114,10 @@ def train(field='hate'):
 
     metrics = calculate_metrics(pipe, X_test, y_test)
     meta = {
-        # "pipeline": [tokenizer.meta, vectorizer.meta, classifier.meta],
+        "pipeline": [tokenizer.meta, vectorizer.meta, classifier.meta],
         "training": metrics
     }
 
-    print(json.dumps(meta, indent=2))
     print("... done.")
 
     # Save model
@@ -135,5 +134,34 @@ def train(field='hate'):
     return DescribedComponent(meta, pipe)
 
 
+def validate(model, field='hate', meta={}):
+    import os
+    import json
+
+    data = load_data(TEST_SET)
+    X = data['text']  # the features we want to analyze
+    y = data[field]  # the labels, or answers, we want to test against
+
+    print('... calculate metrics on validation set')
+    metrics = calculate_metrics(model, X, y)
+    meta['validation'] = metrics
+
+    save_to = os.path.join(MODEL_PATH, f"{field}.meta.pkl")
+    with open(save_to, 'w') as fp:
+        json.dump(meta, fp, indent=2)
+    print("... done")
+
+    return meta
+
+
+def train_and_validate(field='hate'):
+    import json
+    model = train(field)
+    meta = validate(model.component, field, model.meta)
+
+    print()
+    print(json.dumps(meta, indent=2))
+
+
 if __name__ == '__main__':
-    train()
+    train_and_validate()
