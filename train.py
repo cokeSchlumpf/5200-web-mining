@@ -57,7 +57,7 @@ def create_vectorizer(tokenizer):
 
 def load_data(file):
     import pandas as pd
-    return pd.read_csv(file, sep='\t', header=None, names=["hate", "offense", "text"])
+    return pd.read_csv(file, sep='\t', header=None, names=["hate", "offensive", "text"])
 
 
 def calculate_metrics(model, X_test, y_test):
