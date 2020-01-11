@@ -175,6 +175,6 @@ if __name__ == '__main__':
     else:
         field = 'hate'
 
-    print(f"Running training and validation for {field}")
+    print(f"Running training and validation for `{field}`")
 
     train_and_validate(field)

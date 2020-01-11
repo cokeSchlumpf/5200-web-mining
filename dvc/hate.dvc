@@ -1,0 +1,19 @@
+md5: b70ba24d13d64e65704bd115643264f5
+cmd: python train.py hate
+wdir: ..
+deps:
+- md5: 77cf5cf489a70cc5f1cd6798bd9e690f
+  path: data/test.tsv
+- md5: 3a350d9e2e01bb53241e89f73a9b549b
+  path: data/train.tsv
+outs:
+- md5: 5694fc6ec6b136d4306edd2e563ce00b
+  path: model/hate.pkl
+  cache: true
+  metric: false
+  persist: false
+- md5: de708b7596c736ac9bb00185d0e790e3
+  path: model/hate.meta.json
+  cache: true
+  metric: true
+  persist: false
