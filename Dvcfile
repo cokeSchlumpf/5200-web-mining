@@ -1,5 +1,5 @@
-md5: 61ad5afa0cc4fa5dfe441475ce112a3c
-cmd: echo "Combining offensive and hate models"
+md5: c4db16fb4e48290070ed4e4fe874bd79
+cmd: python metrics.py
 deps:
 - md5: 01d6a2e121b877115418e3a740bd7409
   path: model/offensive.meta.json
