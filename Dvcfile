@@ -1,7 +1,7 @@
-md5: 2914ed987f6adafa36c571fa7e8c5989
+md5: 61ad5afa0cc4fa5dfe441475ce112a3c
 cmd: echo "Combining offensive and hate models"
 deps:
-- md5: a702e394b9c5d058bf77851356043ee0
+- md5: 01d6a2e121b877115418e3a740bd7409
   path: model/offensive.meta.json
-- md5: de708b7596c736ac9bb00185d0e790e3
+- md5: 9f1096791aaa7923f6d785e269fb09a8
   path: model/hate.meta.json

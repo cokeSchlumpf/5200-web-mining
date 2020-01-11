@@ -70,8 +70,8 @@ def calculate_metrics(model, X_test, y_test):
         "Accuracy": metrics.accuracy_score(y_test, predicted),
         "Precession": metrics.precision_score(y_test, predicted, average='micro'),
         "Recall": metrics.recall_score(y_test, predicted, average='micro'),
-        "Mean Absolute Error": metrics.mean_absolute_error(y_test, predicted),
-        "Pearson Correlation": pearsonr(y_test, predicted)[0]
+        "MeanAbsoluteError": metrics.mean_absolute_error(y_test, predicted),
+        "PearsonCorrelation": pearsonr(y_test, predicted)[0]
     }
 
     return metrics
