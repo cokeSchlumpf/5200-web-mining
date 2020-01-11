@@ -23,7 +23,9 @@ def create_classifier():
     # from sklearn.linear_model import LogisticRegression
     from sklearn.svm import LinearSVC
 
-    params = {}
+    params = {
+        # "max_iter": 1024
+    }
 
     classifier = LinearSVC(**params)
 
@@ -72,6 +74,7 @@ def calculate_metrics(model, X_test, y_test):
         "Precession": metrics.precision_score(y_test, predicted, average='micro'),
         "Recall": metrics.recall_score(y_test, predicted, average='micro'),
         "MeanAbsoluteError": metrics.mean_absolute_error(y_test, predicted),
+        "MeanSquaredError": metrics.mean_squared_error(y_test, predicted),
         "PearsonCorrelation": pearsonr(y_test, predicted)[0]
     }
 

@@ -10,6 +10,11 @@ print("-------------------")
 os.system('dvc metrics show -a -T --type json --xpath validation.MeanAbsoluteError')
 print()
 
+print("Mean Squared Error")
+print("-------------------")
+os.system('dvc metrics show -a -T --type json --xpath validation.MeanSquaredError')
+print()
+
 print("Accuracy, Recall, F1 Score")
 print("--------------------------")
 os.system('dvc metrics show -a -T --type json --xpath validation.Accuracy')
