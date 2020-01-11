@@ -4,6 +4,7 @@ TRAINING_SET = './data/train.tsv'
 TEST_SET = './data/test.tsv'
 
 MODEL_PATH = './model/'
+METRIC_PATH = './metrics/'
 
 
 class DescribedComponent:
@@ -126,10 +127,11 @@ def train(field='hate'):
     # Save model
     print("... saving model")
     Path(MODEL_PATH).mkdir(parents=True, exist_ok=True)
+    Path(METRIC_PATH).mkdir(parents=True, exist_ok=True)
     save_to = os.path.join(MODEL_PATH, f"{field}.pkl")
     dump(pipe, save_to)
 
-    save_to = os.path.join(MODEL_PATH, f"{field}.meta.json")
+    save_to = os.path.join(METRIC_PATH, f"{field}.meta.json")
     with open(save_to, 'w') as fp:
         json.dump(meta, fp, indent=2)
     print("... done")
@@ -152,7 +154,7 @@ def validate(model, field='hate', meta=None):
     metrics = calculate_metrics(model, X, y)
     meta['validation'] = metrics
 
-    save_to = os.path.join(MODEL_PATH, f"{field}.meta.json")
+    save_to = os.path.join(METRIC_PATH, f"{field}.meta.json")
     with open(save_to, 'w') as fp:
         json.dump(meta, fp, indent=2)
     print("... done")

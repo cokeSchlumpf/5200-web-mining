@@ -1,4 +1,4 @@
-md5: 42c13cd631314fdb633648fb9c0a9abb
+md5: 95872f0c8e044fd32f69759ddd20dbae
 cmd: python train.py offensive
 wdir: ..
 deps:
@@ -6,18 +6,18 @@ deps:
   path: data/test.tsv
 - md5: 3a350d9e2e01bb53241e89f73a9b549b
   path: data/train.tsv
-- md5: 0396d6065ef16a04036fc450952e851e
+- md5: cbbedc9bea096f45727d8d69d43f1027
   path: train.py
 - md5: 8f09f8c17b136085bada85f76ef0b4f5
   path: tokenizers.py
 outs:
-- md5: fcf40dc2f82457d9ed4cbfbfef337bb7
+- md5: 15b426cdfdf123573756851d9925c70a
   path: model/offensive.pkl
   cache: true
   metric: false
   persist: false
-- md5: c1f9b5848d625d862d2a9f8313d6dbf6
-  path: model/offensive.meta.json
+- md5: d60ee87ee8e28f1c8870a0e328c01efc
+  path: metrics/offensive.meta.json
   cache: true
   metric: true
   persist: false
