@@ -1,0 +1,37 @@
+{
+  "field": "hate",
+  "pipeline": [
+    {
+      "name": "Simple Default Tokenizer"
+    },
+    {
+      "name": "<class 'sklearn.feature_extraction.text.CountVectorizer'>",
+      "params": {
+        "ngram_range": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "name": "<class 'sklearn.svm._classes.LinearSVC'>",
+      "params": {}
+    }
+  ],
+  "training": {
+    "Accuracy": 0.773537323470074,
+    "Precession": 0.773537323470074,
+    "Recall": 0.773537323470074,
+    "MeanAbsoluteError": 0.28698722259583054,
+    "MeanSquaredError": 0.4389710827168796,
+    "PearsonCorrelation": 0.37554928850604213
+  },
+  "validation": {
+    "Accuracy": 0.7799072019366552,
+    "Precession": 0.7799072019366552,
+    "Recall": 0.7799072019366552,
+    "MeanAbsoluteError": 0.27899939479523905,
+    "MeanSquaredError": 0.41900342949364533,
+    "PearsonCorrelation": 0.35281983688283536
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "field": "offensive",
+  "pipeline": [
+    {
+      "name": "Simple Default Tokenizer"
+    },
+    {
+      "name": "<class 'sklearn.feature_extraction.text.CountVectorizer'>",
+      "params": {
+        "ngram_range": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "name": "<class 'sklearn.svm._classes.LinearSVC'>",
+      "params": {}
+    }
+  ],
+  "training": {
+    "Accuracy": 0.5810356422326832,
+    "Precession": 0.5810356422326832,
+    "Recall": 0.5810356422326832,
+    "MeanAbsoluteError": 0.6847679892400808,
+    "MeanSquaredError": 1.5058843308675185,
+    "PearsonCorrelation": 0.5470439388316019
+  },
+  "validation": {
+    "Accuracy": 0.5906798466814606,
+    "Precession": 0.5906798466814606,
+    "Recall": 0.5906798466814606,
+    "MeanAbsoluteError": 0.6911438369981844,
+    "MeanSquaredError": 1.5872503530361106,
+    "PearsonCorrelation": 0.553553620250997
+  }
+}
