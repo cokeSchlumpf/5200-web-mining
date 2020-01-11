@@ -134,9 +134,12 @@ def train(field='hate'):
     return DescribedComponent(meta, pipe)
 
 
-def validate(model, field='hate', meta={}):
+def validate(model, field='hate', meta=None):
     import os
     import json
+
+    if meta is None:
+        meta = {}
 
     data = load_data(TEST_SET)
     X = data['text']  # the features we want to analyze
