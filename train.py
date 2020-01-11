@@ -22,9 +22,11 @@ def create_classifier():
     # from sklearn.linear_model import LogisticRegression
     from sklearn.svm import LinearSVC
 
-    params = {}
+    params = {
+        "max_iter": 1024
+    }
 
-    classifier = LinearSVC()
+    classifier = LinearSVC(**params)
 
     meta = {
         "name": str(type(classifier)),
