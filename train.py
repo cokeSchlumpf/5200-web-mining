@@ -29,7 +29,7 @@ def create_classifier():
         # "max_iter": 2048
     }
 
-    classifier = DecisionTreeRegressor(**params)
+    classifier = RandomForestRegressor(**params)
 
     meta = {
         "name": str(type(classifier)),
