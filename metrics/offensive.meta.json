@@ -14,24 +14,24 @@
       }
     },
     {
-      "name": "<class 'sklearn.tree._classes.DecisionTreeClassifier'>",
+      "name": "<class 'sklearn.tree._classes.DecisionTreeRegressor'>",
       "params": {}
     }
   ],
   "training": {
-    "Accuracy": 0.5796906523201076,
-    "Precession": 0.5796906523201076,
-    "Recall": 0.5796906523201076,
-    "MeanAbsoluteError": 0.703429724277068,
-    "MeanSquaredError": 1.605581708137189,
-    "PearsonCorrelation": 0.5649382200643945
+    "Accuracy": 0.5435440484196369,
+    "Precession": 0.5435440484196369,
+    "Recall": 0.5435440484196369,
+    "MeanAbsoluteError": 0.7573974445191661,
+    "MeanSquaredError": 1.679388029589778,
+    "PearsonCorrelation": 0.5425686012821583
   },
   "validation": {
-    "Accuracy": 0.5727254387734517,
-    "Precession": 0.5727254387734517,
-    "Recall": 0.5727254387734517,
-    "MeanAbsoluteError": 0.7220092798063344,
-    "MeanSquaredError": 1.6427274561226548,
-    "PearsonCorrelation": 0.5716401586619521
+    "Accuracy": 0.5592091991123663,
+    "Precession": 0.5592091991123663,
+    "Recall": 0.5592091991123663,
+    "MeanAbsoluteError": 0.7417793019971757,
+    "MeanSquaredError": 1.6705668751260843,
+    "PearsonCorrelation": 0.570258243626264
   }
 }

@@ -21,14 +21,14 @@ class DescribedComponent:
 def create_classifier():
     # from sklearn.linear_model import LinearRegression
     # from sklearn.linear_model import LogisticRegression
-    from sklearn.tree import DecisionTreeClassifier
+    from sklearn.tree import DecisionTreeRegressor
     # from sklearn.svm import LinearSVC
 
     params = {
         # "max_iter": 2048
     }
 
-    classifier = DecisionTreeClassifier(**params)
+    classifier = DecisionTreeRegressor(**params)
 
     meta = {
         "name": str(type(classifier)),
@@ -65,10 +65,11 @@ def load_data(file):
 
 
 def calculate_metrics(model, X_test, y_test):
+    import numpy as np
     from sklearn import metrics
     from scipy.stats import pearsonr
 
-    predicted = model.predict(X_test)
+    predicted = np.rint(model.predict(X_test))
 
     metrics = {
         "Accuracy": metrics.accuracy_score(y_test, predicted),
