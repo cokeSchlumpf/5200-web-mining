@@ -19,19 +19,19 @@
     }
   ],
   "training": {
-    "Accuracy": 0.7357094821788837,
-    "Precession": 0.7357094821788837,
-    "Recall": 0.7357094821788837,
-    "MeanAbsoluteError": 0.36819098856758575,
-    "MeanSquaredError": 0.6748486886348353,
-    "PearsonCorrelation": 0.2899030887586546
+    "Accuracy": 0.7420981842636181,
+    "Precession": 0.7420981842636181,
+    "Recall": 0.7420981842636181,
+    "MeanAbsoluteError": 0.3439811701412239,
+    "MeanSquaredError": 0.5817081371889711,
+    "PearsonCorrelation": 0.3342684315786706
   },
   "validation": {
-    "Accuracy": 0.753278192455114,
-    "Precession": 0.753278192455114,
-    "Recall": 0.753278192455114,
-    "MeanAbsoluteError": 0.3522291708694775,
-    "MeanSquaredError": 0.6782328020980432,
-    "PearsonCorrelation": 0.27274445361859306
+    "Accuracy": 0.7484365543675611,
+    "Precession": 0.7484365543675611,
+    "Recall": 0.7484365543675611,
+    "MeanAbsoluteError": 0.3641315311680452,
+    "MeanSquaredError": 0.7038531369780109,
+    "PearsonCorrelation": 0.28917511826059356
   }
 }
