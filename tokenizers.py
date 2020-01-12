@@ -8,6 +8,10 @@ parser = English()
 punctuations = string.punctuation
 stop_words = STOP_WORDS
 
+REPLACE_NAMES = re.compile(r"@[a-zA-Z0-9_:]+")
+REPLACE_EMOJIS = re.compile(r"&#\d+;")
+REPLACE_NO_SPACE = re.compile("[.;:!\'?,\"()\[\]/]")
+REPLACE_URL = re.compile('http.?://[^\s]+[\s]?')
 
 def meta():
     return {
@@ -19,7 +23,10 @@ def tokenizer(sentence):
     # Simple Text Cleansing
     sentence = sentence.strip().lower()
 
-    sentence = re.sub('&#([a-zA-Z0-9]+);', r' \1 ', sentence)
+    sentence = re.sub('&#([a-zA-Z0-9]+);', r' EMOJI_\1 ', sentence)
+    sentence = re.sub(r'(@[a-zA-Z0-9_:]+)', r' \1 ', sentence)
+
+    sentence = re.sub('')
 
     # Creating our token object, which is used to create documents with linguistic annotations.
     mytokens = parser(sentence)

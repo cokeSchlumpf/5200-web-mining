@@ -15,26 +15,27 @@
       }
     },
     {
-      "name": "<class 'sklearn.svm._classes.LinearSVC'>",
+      "name": "<class 'sklearn.linear_model._logistic.LogisticRegression'>",
       "params": {
-        "max_iter": 100000.0
+        "max_iter": 2048,
+        "C": 0.5
       }
     }
   ],
   "training": {
-    "Accuracy": 0.6336583725622058,
-    "Precession": 0.6336583725622058,
-    "Recall": 0.6336583725622058,
-    "MeanAbsoluteError": 0.601546738399462,
-    "MeanSquaredError": 1.3080026899798252,
-    "PearsonCorrelation": 0.6058605696903314
+    "Accuracy": 0.6294552790854069,
+    "Precession": 0.6294552790854069,
+    "Recall": 0.6294552790854069,
+    "MeanAbsoluteError": 0.6615669132481506,
+    "MeanSquaredError": 1.5243779421654338,
+    "PearsonCorrelation": 0.5232465881557273
   },
   "validation": {
-    "Accuracy": 0.6171071212426871,
-    "Precession": 0.6171071212426871,
-    "Recall": 0.6171071212426871,
-    "MeanAbsoluteError": 0.6290094815412548,
-    "MeanSquaredError": 1.3762356263869275,
-    "PearsonCorrelation": 0.5939116292287268
+    "Accuracy": 0.6163001815614283,
+    "Precession": 0.6163001815614283,
+    "Recall": 0.6163001815614283,
+    "MeanAbsoluteError": 0.6780310671777284,
+    "MeanSquaredError": 1.5406495864434133,
+    "PearsonCorrelation": 0.5251425386398276
   }
 }
