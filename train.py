@@ -24,7 +24,7 @@ def create_classifier():
     # from sklearn.svm import LinearSVC
 
     params = {
-        # "max_iter": 2048
+        "max_iter": 2048
     }
 
     classifier = LogisticRegression(**params)
@@ -135,7 +135,7 @@ def train(field='hate'):
     save_to = os.path.join(METRIC_PATH, f"{field}.meta.json")
     with open(save_to, 'w') as fp:
         json.dump(meta, fp, indent=2)
-    print("... done")
+    print("... done.")
 
     return DescribedComponent(meta, pipe)
 

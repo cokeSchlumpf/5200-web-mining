@@ -15,23 +15,25 @@
     },
     {
       "name": "<class 'sklearn.linear_model._logistic.LogisticRegression'>",
-      "params": {}
+      "params": {
+        "max_iter": 2048
+      }
     }
   ],
   "training": {
-    "Accuracy": 0.632817753866846,
-    "Precession": 0.632817753866846,
-    "Recall": 0.632817753866846,
-    "MeanAbsoluteError": 0.5869199731002017,
-    "MeanSquaredError": 1.2321788836583725,
-    "PearsonCorrelation": 0.6275804449340255
+    "Accuracy": 0.6400470746469401,
+    "Precession": 0.6400470746469401,
+    "Recall": 0.6400470746469401,
+    "MeanAbsoluteError": 0.5758238063214526,
+    "MeanSquaredError": 1.2157027572293209,
+    "PearsonCorrelation": 0.6283168769971875
   },
   "validation": {
-    "Accuracy": 0.6334476497881784,
-    "Precession": 0.6334476497881784,
-    "Recall": 0.6334476497881784,
-    "MeanAbsoluteError": 0.5896711720798871,
-    "MeanSquaredError": 1.2630623360903772,
-    "PearsonCorrelation": 0.6375356011839458
+    "Accuracy": 0.6318337704256607,
+    "Precession": 0.6318337704256607,
+    "Recall": 0.6318337704256607,
+    "MeanAbsoluteError": 0.6023804720597136,
+    "MeanSquaredError": 1.3096631026830745,
+    "PearsonCorrelation": 0.6237622402796071
   }
 }
