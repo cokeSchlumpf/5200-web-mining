@@ -3,9 +3,9 @@ Pearson Coefficient
 working tree:
 	metrics/offensive.meta.json: [0.6459367101262128]
 	metrics/hate.meta.json: [0.349310052887201]
-master:
-	metrics/hate.meta.json: [0.28917511826059356]
-	metrics/offensive.meta.json: [0.570258243626264]
+master, baseline_RandomForestRegressor:
+	metrics/hate.meta.json: [0.349310052887201]
+	metrics/offensive.meta.json: [0.6459367101262128]
 baseline:
 	metrics/hate.meta.json: [0.35281983688283536]
 	metrics/offensive.meta.json: [0.553553620250997]
@@ -27,9 +27,9 @@ Mean Absolute Error
 working tree:
 	metrics/offensive.meta.json: [0.6407101069195078]
 	metrics/hate.meta.json: [0.3021989106314303]
-master:
-	metrics/hate.meta.json: [0.3641315311680452]
-	metrics/offensive.meta.json: [0.7417793019971757]
+master, baseline_RandomForestRegressor:
+	metrics/hate.meta.json: [0.3021989106314303]
+	metrics/offensive.meta.json: [0.6407101069195078]
 baseline:
 	metrics/hate.meta.json: [0.27899939479523905]
 	metrics/offensive.meta.json: [0.6911438369981844]
@@ -51,9 +51,9 @@ Mean Squared Error
 working tree:
 	metrics/offensive.meta.json: [1.2757716360702038]
 	metrics/hate.meta.json: [0.468025015130119]
-master:
-	metrics/hate.meta.json: [0.7038531369780109]
-	metrics/offensive.meta.json: [1.6705668751260843]
+master, baseline_RandomForestRegressor:
+	metrics/hate.meta.json: [0.468025015130119]
+	metrics/offensive.meta.json: [1.2757716360702038]
 baseline:
 	metrics/hate.meta.json: [0.41900342949364533]
 	metrics/offensive.meta.json: [1.5872503530361106]
@@ -75,9 +75,9 @@ Accuracy, Recall, F1 Score
 working tree:
 	metrics/offensive.meta.json: [0.5715150292515635]
 	metrics/hate.meta.json: [0.7659874924349405]
-master:
-	metrics/hate.meta.json: [0.7484365543675611]
-	metrics/offensive.meta.json: [0.5592091991123663]
+master, baseline_RandomForestRegressor:
+	metrics/hate.meta.json: [0.7659874924349405]
+	metrics/offensive.meta.json: [0.5715150292515635]
 baseline:
 	metrics/hate.meta.json: [0.7799072019366552]
 	metrics/offensive.meta.json: [0.5906798466814606]
