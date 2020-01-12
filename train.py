@@ -26,9 +26,9 @@ def create_classifier():
     from sklearn.svm import LinearSVC
 
     params = {
-        "class_weight": "balanced",
-        "dual": False,
-        "tol": 1e-2,
+        #"class_weight": "balanced",
+        #"dual": False,
+        #"tol": 1e-2,
         "max_iter": 1e5
     }
 
@@ -47,14 +47,24 @@ def create_tokenizer():
 
 
 def create_vectorizer(tokenizer):
+    """
     from sklearn.feature_extraction.text import CountVectorizer
 
     params = {
         "ngram_range": (1, 1),
-        "min_df": 0.0001
+        # "min_df": 0.0001
     }
 
     vectorizer = CountVectorizer(tokenizer=tokenizer, **params)
+    """
+    from sklearn.feature_extraction.text import TfidfVectorizer
+
+    params = {
+        "ngram_range": (1, 3),
+        "max_features": 100000
+    }
+
+    vectorizer = TfidfVectorizer(**params)
 
     meta = {
         "name": str(type(vectorizer)),

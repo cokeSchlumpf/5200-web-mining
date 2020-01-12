@@ -5,39 +5,36 @@
       "name": "Simple Default Tokenizer"
     },
     {
-      "name": "<class 'sklearn.feature_extraction.text.CountVectorizer'>",
+      "name": "<class 'sklearn.feature_extraction.text.TfidfVectorizer'>",
       "params": {
         "ngram_range": [
           1,
-          1
+          3
         ],
-        "min_df": 0.0001
+        "max_features": 100000
       }
     },
     {
       "name": "<class 'sklearn.svm._classes.LinearSVC'>",
       "params": {
-        "class_weight": "balanced",
-        "dual": false,
-        "tol": 0.01,
         "max_iter": 100000.0
       }
     }
   ],
   "training": {
-    "Accuracy": 0.5095830531271015,
-    "Precession": 0.5095830531271015,
-    "Recall": 0.5095830531271015,
-    "MeanAbsoluteError": 0.941324815063887,
-    "MeanSquaredError": 2.543207800941493,
-    "PearsonCorrelation": 0.44860143424829296
+    "Accuracy": 0.6336583725622058,
+    "Precession": 0.6336583725622058,
+    "Recall": 0.6336583725622058,
+    "MeanAbsoluteError": 0.601546738399462,
+    "MeanSquaredError": 1.3080026899798252,
+    "PearsonCorrelation": 0.6058605696903314
   },
   "validation": {
-    "Accuracy": 0.5178535404478515,
-    "Precession": 0.5178535404478515,
-    "Recall": 0.5178535404478515,
-    "MeanAbsoluteError": 0.9366552350211822,
-    "MeanSquaredError": 2.52592293726044,
-    "PearsonCorrelation": 0.4731781978813346
+    "Accuracy": 0.6171071212426871,
+    "Precession": 0.6171071212426871,
+    "Recall": 0.6171071212426871,
+    "MeanAbsoluteError": 0.6290094815412548,
+    "MeanSquaredError": 1.3762356263869275,
+    "PearsonCorrelation": 0.5939116292287268
   }
 }

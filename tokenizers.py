@@ -22,10 +22,10 @@ def tokenizer(sentence):
     mytokens = parser(sentence)
 
     # Lemmatizing each token and converting each token into lowercase
-    mytokens = [ word.lemma_.lower().strip() if word.lemma_ != "-PRON-" else word.lower_ for word in mytokens ]
+    mytokens = [word.lemma_.lower().strip() if word.lemma_ != "-PRON-" else word.lower_ for word in mytokens]
 
     # Removing stop words
-    mytokens = [ word for word in mytokens if word not in punctuations and word not in stop_words ]
+    mytokens = [word for word in mytokens if word not in punctuations and word not in stop_words]
 
     # return preprocessed list of tokens
     return mytokens
