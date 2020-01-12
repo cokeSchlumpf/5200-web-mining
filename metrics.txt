@@ -3,9 +3,9 @@ Pearson Coefficient
 working tree:
 	metrics/offensive.meta.json: [0.5939116292287268]
 	metrics/hate.meta.json: [0.36752609134683]
-master:
-	metrics/hate.meta.json: [0.33384640807894816]
-	metrics/offensive.meta.json: [0.4731781978813346]
+master, tfidf_LinearSVC:
+	metrics/hate.meta.json: [0.36752609134683]
+	metrics/offensive.meta.json: [0.5939116292287268]
 baseline:
 	metrics/hate.meta.json: [0.35281983688283536]
 	metrics/offensive.meta.json: [0.553553620250997]
@@ -30,9 +30,9 @@ Mean Absolute Error
 working tree:
 	metrics/offensive.meta.json: [0.6290094815412548]
 	metrics/hate.meta.json: [0.2489408916683478]
-master:
-	metrics/hate.meta.json: [0.3611055073633246]
-	metrics/offensive.meta.json: [0.9366552350211822]
+master, tfidf_LinearSVC:
+	metrics/hate.meta.json: [0.2489408916683478]
+	metrics/offensive.meta.json: [0.6290094815412548]
 baseline:
 	metrics/hate.meta.json: [0.27899939479523905]
 	metrics/offensive.meta.json: [0.6911438369981844]
@@ -57,9 +57,9 @@ Mean Squared Error
 working tree:
 	metrics/offensive.meta.json: [1.3762356263869275]
 	metrics/hate.meta.json: [0.3808755295541658]
-master:
-	metrics/hate.meta.json: [0.6088359895097841]
-	metrics/offensive.meta.json: [2.52592293726044]
+master, tfidf_LinearSVC:
+	metrics/hate.meta.json: [0.3808755295541658]
+	metrics/offensive.meta.json: [1.3762356263869275]
 baseline:
 	metrics/hate.meta.json: [0.41900342949364533]
 	metrics/offensive.meta.json: [1.5872503530361106]
@@ -84,9 +84,9 @@ Accuracy, Recall, F1 Score
 working tree:
 	metrics/offensive.meta.json: [0.6171071212426871]
 	metrics/hate.meta.json: [0.80411539237442]
-master:
-	metrics/hate.meta.json: [0.732701230583014]
-	metrics/offensive.meta.json: [0.5178535404478515]
+master, tfidf_LinearSVC:
+	metrics/hate.meta.json: [0.80411539237442]
+	metrics/offensive.meta.json: [0.6171071212426871]
 baseline:
 	metrics/hate.meta.json: [0.7799072019366552]
 	metrics/offensive.meta.json: [0.5906798466814606]

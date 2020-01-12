@@ -1,4 +1,4 @@
-md5: 440112f9de75190aa70eb75422ed8100
+md5: cae8c33ef929b1af92d8837b359e095c
 cmd: python metrics.py > metrics.txt && cat metrics.txt
 always_changed: true
 deps:
@@ -7,7 +7,7 @@ deps:
 - md5: 500f828760f994fcedad0b2f7e911d53
   path: metrics/hate.meta.json
 outs:
-- md5: e1a09b599a2b52551aab81575097a369
+- md5: b2033622f1d740d3f7fe9a7788e86b47
   path: metrics.txt
   cache: false
   metric: false
