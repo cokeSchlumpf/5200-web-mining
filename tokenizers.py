@@ -1,3 +1,4 @@
+import re
 import string
 
 from spacy.lang.en import English
@@ -17,6 +18,8 @@ def meta():
 def tokenizer(sentence):
     # Simple Text Cleansing
     sentence = sentence.strip().lower()
+
+    sentence = re.sub('&#([a-zA-Z0-9]+);', r' \1 ', sentence)
 
     # Creating our token object, which is used to create documents with linguistic annotations.
     mytokens = parser(sentence)
