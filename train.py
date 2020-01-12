@@ -29,8 +29,8 @@ def create_classifier():
         #"class_weight": "balanced",
         #"dual": False,
         #"tol": 1e-2,
-        "max_iter": 2048,
-        "C": 0.5
+        "max_iter": 10000,
+        "C": 0.005
     }
 
     classifier = LogisticRegression(**params)

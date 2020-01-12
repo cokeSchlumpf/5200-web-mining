@@ -1,11 +1,11 @@
 Pearson Coefficient
 -------------------
 working tree:
-	metrics/offensive.meta.json: [0.5251425386398276]
+	metrics/offensive.meta.json: [nan]
+	metrics/hate.meta.json: [nan]
+master, tfidf_LinearRegression:
 	metrics/hate.meta.json: [0.23086081727367477]
-master:
-	metrics/hate.meta.json: [0.36752609134683]
-	metrics/offensive.meta.json: [0.5939116292287268]
+	metrics/offensive.meta.json: [0.5251425386398276]
 baseline:
 	metrics/hate.meta.json: [0.35281983688283536]
 	metrics/offensive.meta.json: [0.553553620250997]
@@ -31,11 +31,11 @@ tfidf_LinearSVC:
 Mean Absolute Error
 -------------------
 working tree:
-	metrics/offensive.meta.json: [0.6780310671777284]
+	metrics/offensive.meta.json: [0.9459350413556586]
+	metrics/hate.meta.json: [0.2672987694169861]
+master, tfidf_LinearRegression:
 	metrics/hate.meta.json: [0.2568085535606213]
-master:
-	metrics/hate.meta.json: [0.2489408916683478]
-	metrics/offensive.meta.json: [0.6290094815412548]
+	metrics/offensive.meta.json: [0.6780310671777284]
 baseline:
 	metrics/hate.meta.json: [0.27899939479523905]
 	metrics/offensive.meta.json: [0.6911438369981844]
@@ -61,11 +61,11 @@ tfidf_LinearSVC:
 Mean Squared Error
 -------------------
 working tree:
-	metrics/offensive.meta.json: [1.5406495864434133]
+	metrics/offensive.meta.json: [2.3411337502521685]
+	metrics/hate.meta.json: [0.4549122453096631]
+master, tfidf_LinearRegression:
 	metrics/hate.meta.json: [0.42384506758119833]
-master:
-	metrics/hate.meta.json: [0.3808755295541658]
-	metrics/offensive.meta.json: [1.3762356263869275]
+	metrics/offensive.meta.json: [1.5406495864434133]
 baseline:
 	metrics/hate.meta.json: [0.41900342949364533]
 	metrics/offensive.meta.json: [1.5872503530361106]
@@ -91,11 +91,11 @@ tfidf_LinearSVC:
 Accuracy, Recall, F1 Score
 --------------------------
 working tree:
-	metrics/offensive.meta.json: [0.6163001815614283]
+	metrics/offensive.meta.json: [0.5343958039136575]
+	metrics/hate.meta.json: [0.8073431510994553]
+master, tfidf_LinearRegression:
 	metrics/hate.meta.json: [0.8101674399838612]
-master:
-	metrics/hate.meta.json: [0.80411539237442]
-	metrics/offensive.meta.json: [0.6171071212426871]
+	metrics/offensive.meta.json: [0.6163001815614283]
 baseline:
 	metrics/hate.meta.json: [0.7799072019366552]
 	metrics/offensive.meta.json: [0.5906798466814606]

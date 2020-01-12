@@ -13,6 +13,7 @@ REPLACE_EMOJIS = re.compile(r"&#\d+;")
 REPLACE_NO_SPACE = re.compile("[.;:!\'?,\"()\[\]/]")
 REPLACE_URL = re.compile('http.?://[^\s]+[\s]?')
 
+
 def meta():
     return {
         "name": "Simple Default Tokenizer"
@@ -24,9 +25,7 @@ def tokenizer(sentence):
     sentence = sentence.strip().lower()
 
     sentence = re.sub('&#([a-zA-Z0-9]+);', r' EMOJI_\1 ', sentence)
-    sentence = re.sub(r'(@[a-zA-Z0-9_:]+)', r' \1 ', sentence)
-
-    sentence = re.sub('')
+    sentence = re.sub(r'(@[a-zA-Z0-9_:]+)', r' TALK_TO_SOMEONES ', sentence)
 
     # Creating our token object, which is used to create documents with linguistic annotations.
     mytokens = parser(sentence)
@@ -35,7 +34,8 @@ def tokenizer(sentence):
     mytokens = [word.lemma_.lower().strip() if word.lemma_ != "-PRON-" else word.lower_ for word in mytokens]
 
     # Removing stop words
-    mytokens = [word for word in mytokens if word not in punctuations and word not in stop_words]
+    # mytokens = [word for word in mytokens if word not in punctuations and word not in stop_words]
+    mytokens = [word for word in mytokens if word not in punctuations ]
 
     # return preprocessed list of tokens
     return mytokens
