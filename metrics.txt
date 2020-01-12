@@ -1,8 +1,8 @@
 Pearson Coefficient
 -------------------
 working tree:
-	metrics/offensive.meta.json: [0.5525826033401438]
-	metrics/hate.meta.json: [0.36472055446655965]
+	metrics/offensive.meta.json: [0.6375356011839458]
+	metrics/hate.meta.json: [0.39166515852660977]
 master:
 	metrics/hate.meta.json: [0.36472055446655965]
 	metrics/offensive.meta.json: [0.5525826033401438]
@@ -16,8 +16,8 @@ baseline_LinearSVC:
 Mean Absolute Error
 -------------------
 working tree:
-	metrics/offensive.meta.json: [0.6915473068388138]
-	metrics/hate.meta.json: [0.2751664313092596]
+	metrics/offensive.meta.json: [0.5896711720798871]
+	metrics/hate.meta.json: [0.25055477103086543]
 master:
 	metrics/hate.meta.json: [0.2751664313092596]
 	metrics/offensive.meta.json: [0.6915473068388138]
@@ -31,8 +31,8 @@ baseline_LinearSVC:
 Mean Squared Error
 -------------------
 working tree:
-	metrics/offensive.meta.json: [1.590478111761146]
-	metrics/hate.meta.json: [0.40952188823885416]
+	metrics/offensive.meta.json: [1.2630623360903772]
+	metrics/hate.meta.json: [0.37482348194472465]
 master:
 	metrics/hate.meta.json: [0.40952188823885416]
 	metrics/offensive.meta.json: [1.590478111761146]
@@ -46,8 +46,8 @@ baseline_LinearSVC:
 Accuracy, Recall, F1 Score
 --------------------------
 working tree:
-	metrics/offensive.meta.json: [0.5916885212830341]
-	metrics/hate.meta.json: [0.7813193463788581]
+	metrics/offensive.meta.json: [0.6334476497881784]
+	metrics/hate.meta.json: [0.8012911034900141]
 master:
 	metrics/hate.meta.json: [0.7813193463788581]
 	metrics/offensive.meta.json: [0.5916885212830341]

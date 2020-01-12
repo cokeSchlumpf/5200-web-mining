@@ -1,13 +1,13 @@
-md5: 1f64b1d359960b0a6e86eceeccaafe3e
+md5: d2e1246076186083a1ef6fd6d4385194
 cmd: python metrics.py > metrics.txt && cat metrics.txt
 always_changed: true
 deps:
-- md5: 6855ec7446c849b117aeaf3114129e2c
+- md5: 93c41ee4ec4e6c8370f6a1682fefbdcb
   path: metrics/offensive.meta.json
-- md5: 62ed02a62ee9df8d8faa9a3958bcdad6
+- md5: ecc6c0273eacb284ac8e8f74be6f9000
   path: metrics/hate.meta.json
 outs:
-- md5: 3787da5af2929576b52a1ace0c37809e
+- md5: 6e8f46fcc7f452fe2be93d7e996ffec1
   path: metrics.txt
   cache: false
   metric: false
