@@ -14,26 +14,24 @@
       }
     },
     {
-      "name": "<class 'sklearn.linear_model._logistic.LogisticRegression'>",
-      "params": {
-        "max_iter": 2048
-      }
+      "name": "<class 'sklearn.tree._classes.DecisionTreeClassifier'>",
+      "params": {}
     }
   ],
   "training": {
-    "Accuracy": 0.6400470746469401,
-    "Precession": 0.6400470746469401,
-    "Recall": 0.6400470746469401,
-    "MeanAbsoluteError": 0.5758238063214526,
-    "MeanSquaredError": 1.2157027572293209,
-    "PearsonCorrelation": 0.6283168769971875
+    "Accuracy": 0.5796906523201076,
+    "Precession": 0.5796906523201076,
+    "Recall": 0.5796906523201076,
+    "MeanAbsoluteError": 0.703429724277068,
+    "MeanSquaredError": 1.605581708137189,
+    "PearsonCorrelation": 0.5649382200643945
   },
   "validation": {
-    "Accuracy": 0.6318337704256607,
-    "Precession": 0.6318337704256607,
-    "Recall": 0.6318337704256607,
-    "MeanAbsoluteError": 0.6023804720597136,
-    "MeanSquaredError": 1.3096631026830745,
-    "PearsonCorrelation": 0.6237622402796071
+    "Accuracy": 0.5727254387734517,
+    "Precession": 0.5727254387734517,
+    "Recall": 0.5727254387734517,
+    "MeanAbsoluteError": 0.7220092798063344,
+    "MeanSquaredError": 1.6427274561226548,
+    "PearsonCorrelation": 0.5716401586619521
   }
 }

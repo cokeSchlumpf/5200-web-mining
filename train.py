@@ -20,14 +20,15 @@ class DescribedComponent:
 
 def create_classifier():
     # from sklearn.linear_model import LinearRegression
-    from sklearn.linear_model import LogisticRegression
+    # from sklearn.linear_model import LogisticRegression
+    from sklearn.tree import DecisionTreeClassifier
     # from sklearn.svm import LinearSVC
 
     params = {
-        "max_iter": 2048
+        # "max_iter": 2048
     }
 
-    classifier = LogisticRegression(**params)
+    classifier = DecisionTreeClassifier(**params)
 
     meta = {
         "name": str(type(classifier)),
