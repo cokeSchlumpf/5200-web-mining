@@ -1,9 +1,9 @@
 Pearson Coefficient
 -------------------
 working tree:
-	metrics/offensive.meta.json: [0.6459367101262128]
-	metrics/hate.meta.json: [0.349310052887201]
-master, baseline_RandomForestRegressor:
+	metrics/offensive.meta.json: [0.4731781978813346]
+	metrics/hate.meta.json: [0.33384640807894816]
+master:
 	metrics/hate.meta.json: [0.349310052887201]
 	metrics/offensive.meta.json: [0.6459367101262128]
 baseline:
@@ -21,13 +21,16 @@ baseline_LinearSVC:
 baseline_LogisticRegression:
 	metrics/hate.meta.json: [0.39166515852660977]
 	metrics/offensive.meta.json: [0.6375356011839458]
+baseline_RandomForestRegressor:
+	metrics/hate.meta.json: [0.349310052887201]
+	metrics/offensive.meta.json: [0.6459367101262128]
 
 Mean Absolute Error
 -------------------
 working tree:
-	metrics/offensive.meta.json: [0.6407101069195078]
-	metrics/hate.meta.json: [0.3021989106314303]
-master, baseline_RandomForestRegressor:
+	metrics/offensive.meta.json: [0.9366552350211822]
+	metrics/hate.meta.json: [0.3611055073633246]
+master:
 	metrics/hate.meta.json: [0.3021989106314303]
 	metrics/offensive.meta.json: [0.6407101069195078]
 baseline:
@@ -45,13 +48,16 @@ baseline_LinearSVC:
 baseline_LogisticRegression:
 	metrics/hate.meta.json: [0.25055477103086543]
 	metrics/offensive.meta.json: [0.5896711720798871]
+baseline_RandomForestRegressor:
+	metrics/hate.meta.json: [0.3021989106314303]
+	metrics/offensive.meta.json: [0.6407101069195078]
 
 Mean Squared Error
 -------------------
 working tree:
-	metrics/offensive.meta.json: [1.2757716360702038]
-	metrics/hate.meta.json: [0.468025015130119]
-master, baseline_RandomForestRegressor:
+	metrics/offensive.meta.json: [2.52592293726044]
+	metrics/hate.meta.json: [0.6088359895097841]
+master:
 	metrics/hate.meta.json: [0.468025015130119]
 	metrics/offensive.meta.json: [1.2757716360702038]
 baseline:
@@ -69,13 +75,16 @@ baseline_LinearSVC:
 baseline_LogisticRegression:
 	metrics/hate.meta.json: [0.37482348194472465]
 	metrics/offensive.meta.json: [1.2630623360903772]
+baseline_RandomForestRegressor:
+	metrics/hate.meta.json: [0.468025015130119]
+	metrics/offensive.meta.json: [1.2757716360702038]
 
 Accuracy, Recall, F1 Score
 --------------------------
 working tree:
-	metrics/offensive.meta.json: [0.5715150292515635]
-	metrics/hate.meta.json: [0.7659874924349405]
-master, baseline_RandomForestRegressor:
+	metrics/offensive.meta.json: [0.5178535404478515]
+	metrics/hate.meta.json: [0.732701230583014]
+master:
 	metrics/hate.meta.json: [0.7659874924349405]
 	metrics/offensive.meta.json: [0.5715150292515635]
 baseline:
@@ -93,4 +102,7 @@ baseline_LinearSVC:
 baseline_LogisticRegression:
 	metrics/hate.meta.json: [0.8012911034900141]
 	metrics/offensive.meta.json: [0.6334476497881784]
+baseline_RandomForestRegressor:
+	metrics/hate.meta.json: [0.7659874924349405]
+	metrics/offensive.meta.json: [0.5715150292515635]
 

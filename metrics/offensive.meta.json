@@ -10,28 +10,34 @@
         "ngram_range": [
           1,
           1
-        ]
+        ],
+        "min_df": 0.0001
       }
     },
     {
-      "name": "<class 'sklearn.ensemble._forest.RandomForestRegressor'>",
-      "params": {}
+      "name": "<class 'sklearn.svm._classes.LinearSVC'>",
+      "params": {
+        "class_weight": "balanced",
+        "dual": false,
+        "tol": 0.01,
+        "max_iter": 100000.0
+      }
     }
   ],
   "training": {
-    "Accuracy": 0.5690988567585743,
-    "Precession": 0.5690988567585743,
-    "Recall": 0.5690988567585743,
-    "MeanAbsoluteError": 0.6476126429051782,
-    "MeanSquaredError": 1.2841291190316073,
-    "PearsonCorrelation": 0.6246691782234363
+    "Accuracy": 0.5095830531271015,
+    "Precession": 0.5095830531271015,
+    "Recall": 0.5095830531271015,
+    "MeanAbsoluteError": 0.941324815063887,
+    "MeanSquaredError": 2.543207800941493,
+    "PearsonCorrelation": 0.44860143424829296
   },
   "validation": {
-    "Accuracy": 0.5715150292515635,
-    "Precession": 0.5715150292515635,
-    "Recall": 0.5715150292515635,
-    "MeanAbsoluteError": 0.6407101069195078,
-    "MeanSquaredError": 1.2757716360702038,
-    "PearsonCorrelation": 0.6459367101262128
+    "Accuracy": 0.5178535404478515,
+    "Precession": 0.5178535404478515,
+    "Recall": 0.5178535404478515,
+    "MeanAbsoluteError": 0.9366552350211822,
+    "MeanSquaredError": 2.52592293726044,
+    "PearsonCorrelation": 0.4731781978813346
   }
 }

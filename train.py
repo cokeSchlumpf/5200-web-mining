@@ -21,15 +21,18 @@ class DescribedComponent:
 def create_classifier():
     # from sklearn.linear_model import LinearRegression
     # from sklearn.linear_model import LogisticRegression
-    from sklearn.tree import DecisionTreeRegressor
-    from sklearn.ensemble import RandomForestRegressor
-    # from sklearn.svm import LinearSVC
+    # from sklearn.tree import DecisionTreeRegressor
+    # from sklearn.ensemble import RandomForestRegressor
+    from sklearn.svm import LinearSVC
 
     params = {
-        # "max_iter": 2048
+        "class_weight": "balanced",
+        "dual": False,
+        "tol": 1e-2,
+        "max_iter": 1e5
     }
 
-    classifier = RandomForestRegressor(**params)
+    classifier = LinearSVC(**params)
 
     meta = {
         "name": str(type(classifier)),
@@ -47,7 +50,8 @@ def create_vectorizer(tokenizer):
     from sklearn.feature_extraction.text import CountVectorizer
 
     params = {
-        "ngram_range": (1, 1)
+        "ngram_range": (1, 1),
+        "min_df": 0.0001
     }
 
     vectorizer = CountVectorizer(tokenizer=tokenizer, **params)
